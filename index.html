@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::after,
+      *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+      }
+      :root {
+        /* Colors */
+        --pri-green: hsl(75, 94%, 57%);
+        --pri-white: hsl(0, 0%, 100%);
+        --pri-grey-700: hsl(0, 0%, 20%);
+        --pri-grey-800: hsl(0, 0%, 12%);
+        --pri-grey-900: hsl(0, 0%, 8%);
+        /* Fonts */
+        --font-weight-sm: 400;
+        --font-weight-md: 600;
+        --font-weight-xl: 700;
+      }
+      body {
+        background-color: var(--pri-grey-900);
+      }
+      .card {
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px 35px;
+        margin: 50px auto;
+        text-align: center;
+        background-color: var(--pri-grey-800);
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+      img {
+        width: 80px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .info h1 {
+        font-size: 25px;
+      }
+      .info p {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        color: var(--pri-green);
+        font-weight: var(--font-weight-md);
+        font-size: 15px;
+      }
+      p {
+        margin-bottom: 20px;
+        font-weight: var(--font-weight-sm);
+        opacity: 0.8;
+      }
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+      }
+      button {
+        font-weight: var(--font-weight-md);
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        background-color: var(--pri-grey-700);
+        color: var(--pri-white);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: var(--pri-green);
+        color: var(--pri-grey-700);
+        font-weight: var(--font-weight-md);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: var(--pri-white);
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="assets/images/avatar-jessica.jpeg" alt="Jessica Avatar" />
+      <div class="info">
+        <h1>Jessica Randall</h1>
+        <p>London, United Kingdom</p>
+      </div>
+      <p>"Front-end developer and avid reader."</p>
+      <div class="social-media">
+        <button>GitHub</button>
+        <button>Frontend Mentor</button>
+        <button>LinkedIn</button>
+        <button>Twitter</button>
+        <button>Instagram</button>
+      </div>
+    </div>
+    <div class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Suleiman-Oz">Suleiman</a>.
+      </p>
+    </div>
+  </body>
+</html>
